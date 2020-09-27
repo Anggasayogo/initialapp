@@ -11,7 +11,6 @@ const Header = () => {
             <Link to="/donasi" className="list-group-item list-group-item-action">Donasi</Link>
             <Link to="/pengumuman" className="list-group-item list-group-item-action">Pengumuman</Link>
             <Link to="/beritaacara" className="list-group-item list-group-item-action">Berita Acara</Link>
-            <Link className="list-group-item list-group-item-action disabled" tabIndex={-1} aria-disabled="true">Logout</Link>
         </div>
     )
 }

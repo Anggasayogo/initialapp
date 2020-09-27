@@ -8,6 +8,9 @@ import Donasi from './donasi'
 import Crm from './crm'
 import BeritaAcara from './beritaacara'
 import MainApp from './mainapp';
+import AddPengumuman from './pengumuman/addpengumuman'
+import AddMember from './member/addmember'
+import DeleteMember from './member/deleteMember'
 
 export{
     Login,
@@ -20,4 +23,7 @@ export{
     Crm,
     BeritaAcara,
     MainApp,
+    AddPengumuman,
+    AddMember,
+    DeleteMember,
 }
