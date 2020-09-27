@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { Back, Loading } from '../../components';
@@ -19,29 +19,26 @@ const EditMember = () => {
     const [cadanganps,setCadanganps] = useState('')
 
     const {id} = useParams();
-
-    useEffect(()=>{
-        function Details(id){
-            CallApi("get",`member/${id}`)
-            .then(res=>{
-                console.log(res.data)
-                setNopol(res.data.nopol);
-                setNra(res.data.nra);
-                setEmail(res.data.email);
-                setPhone(res.data.phone);
-                setVarian(res.data.varian);
-                setAliasname(res.data.pseudonym);
-                setAddres(res.data.alamat);
-                setWarna(res.data.warna);
-                setFullname(res.data.full_name)
-                setCadanganps(res.data.password)
-            })
-            .catch(err=>{
-                console.log(err)
-            })
-        }
-        Details(id)
-    },[])
+    function Details(id){
+        CallApi("get",`member/${id}`)
+        .then(res=>{
+            console.log(res.data)
+            setNopol(res.data.nopol);
+            setNra(res.data.nra);
+            setEmail(res.data.email);
+            setPhone(res.data.phone);
+            setVarian(res.data.varian);
+            setAliasname(res.data.pseudonym);
+            setAddres(res.data.alamat);
+            setWarna(res.data.warna);
+            setFullname(res.data.full_name)
+            setCadanganps(res.data.password)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
+    Details(id)
 
     const history = useHistory();
     const hanldeSubmit = ()=>{

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom'
 import { Header, Topbar } from '../../components'
 import BeritaAcara from '../beritaacara'
@@ -15,12 +15,13 @@ import AddPengumuman from '../pengumuman/addpengumuman'
 
 const MainApp = () => {
     const history = useHistory();
-    useEffect(()=>{
+    const sessionCek = ()=>{
         const token = localStorage.getItem('api_token')
         if(!token){
             history.goBack();
         }
-    },[])
+    }
+    sessionCek();
     return (
         <>
             <Topbar/>

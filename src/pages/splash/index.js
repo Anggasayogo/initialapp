@@ -1,14 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
+
 
 const Splash = () => {
   const history = useHistory();
-
-  useEffect(()=>{
-      setTimeout(()=>{
-        history.push('/login')
-      },4000)
-  },[])
+  const navigate = ()=>{
+    setTimeout(()=>{
+      history.push('/login')
+    },4000)
+  }
+  navigate()
 
   return (
       <div>

@@ -1,10 +1,9 @@
-import Axios from 'axios';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { Back, Loading } from '../../components'
+import { Back, Loading } from '../../components';
 import CallApi from '../../config/callApi';
-import './member.css'
+import './member.css';
 
 
 const AddMember = () => {
