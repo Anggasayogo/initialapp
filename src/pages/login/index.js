@@ -21,7 +21,7 @@ const Login = () => {
             setLoading(false)
             // console.log(res.data.data.api_token);
             localStorage.setItem('api_token',res.data.data.api_token)
-            history.push('/')
+            history.push('/dashboard')
         })
         .catch(err=>{
             console.log(err)
