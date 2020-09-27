@@ -36,7 +36,7 @@ const MainApp = () => {
                 <div className="col-md-9">
                     <div className="container mt-2 shadow p-3 mb-5 bg-white rounded">
                     <Switch>
-                        <Route path="/" component={Dashboard} exact/>
+                        <Route path="/dashboard" component={Dashboard} exact/>
                         <Route path="/member" component={Member} />
                         <Route path="/pengumuman" component={Pengumuman} />
                         <Route path="/crm" component={Crm} />

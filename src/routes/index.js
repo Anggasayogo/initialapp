@@ -5,9 +5,9 @@ import { Login, MainApp, Splash } from '../pages'
 const Routes = () => {
     return (
         <Switch>
-            <Route path="/splash" component={Splash} exact/>
-            <Route path="/login" component={Login} />
-            <Route path="/" component={MainApp} />
+            <Route path="/" component={Login} exact/>
+            <Route path="/splash" component={Splash}/>
+            <Route path="/dashboard" component={MainApp} />
         </Switch>
     )
 }

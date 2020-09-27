@@ -1,7 +1,16 @@
 import React from 'react'
 import { Chart } from 'react-charts'
+import { useHistory } from 'react-router-dom'
  
 function Dashboard() {
+  const history = useHistory();
+    const sessionCek = ()=>{
+        const token = localStorage.getItem('api_token')
+        if(!token){
+            history.goBack();
+        }
+    }
+    sessionCek()
   const data = React.useMemo(
     () => [
       {
