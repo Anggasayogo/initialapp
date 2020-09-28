@@ -9,7 +9,9 @@ import Kopdar from '../kopdar'
 import Member from '../member'
 import AddMember from '../member/addmember'
 import DeleteMember from '../member/deleteMember'
+import DetailMember from '../member/detailmember'
 import EditMember from '../member/editmember'
+import NotFound from '../notfound'
 import Pengumuman from '../pengumuman'
 import AddPengumuman from '../pengumuman/addpengumuman'
 
@@ -47,6 +49,8 @@ const MainApp = () => {
                         <Route path="/add/member" component={AddMember} />
                         <Route path="/destroy/member/:id" component={DeleteMember} />
                         <Route path="/edit/member/:id" component={EditMember} />
+                        <Route path="/detail/member/:id" component={DetailMember} />
+                        <Route path="*" component={NotFound} />
                     </Switch>
                     </div>
                 </div>

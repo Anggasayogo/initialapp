@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { Login, MainApp, Splash } from '../pages'
+import { Login, MainApp, NotFound, Splash } from '../pages'
 
 const Routes = () => {
     return (
@@ -8,6 +8,7 @@ const Routes = () => {
             <Route path="/" component={Login} exact/>
             <Route path="/splash" component={Splash}/>
             <Route path="/dashboard" component={MainApp} exact/>
+            <Route path="*" component={NotFound} />
         </Switch>
     )
 }

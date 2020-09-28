@@ -11,6 +11,8 @@ import MainApp from './mainapp';
 import AddPengumuman from './pengumuman/addpengumuman'
 import AddMember from './member/addmember'
 import DeleteMember from './member/deleteMember'
+import DetailMember from './member/detailmember'
+import NotFound from './notfound';
 
 export{
     Login,
@@ -26,4 +28,6 @@ export{
     AddPengumuman,
     AddMember,
     DeleteMember,
+    DetailMember,
+    NotFound,
 }

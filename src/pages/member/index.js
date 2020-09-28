@@ -54,7 +54,7 @@ const Member = () => {
                                     <td>
                                         <Link className="fa fa-edit btn btn-warning btn-sm"to={`edit/member/${e.id_member}`} ></Link>
                                         <Link className="fa fa-trash btn btn-danger btn-sm ml-1" to={`destroy/member/${e.id_member}`} ></Link>
-                                        <Link className="fa fa-eye btn btn-info btn-sm ml-1" to={`detail/${e.id_member}`}></Link>
+                                        <Link className="fa fa-eye btn btn-info btn-sm ml-1" to={`detail/member/${e.id_member}`}></Link>
                                     </td>
                                 </tr>
 
